@@ -21,7 +21,7 @@ test('AssetsByTypePlugin', (done) => {
     ],
   }
 
-  webpack(config, (err, stats) => {
+  webpack(config, (err) => {
     expect(err).toBeFalsy()
     expect(requireAssets).not.toThrow()
     const assets = requireAssets()
