@@ -26,6 +26,7 @@ const config = {
 ```
 
 Output:
+
 ```json
 {"js":["vendor.js", "main.js"],"css":["styles.css"]}
 ```
