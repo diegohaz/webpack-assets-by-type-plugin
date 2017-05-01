@@ -2,5 +2,5 @@
 node_modules
 coverage
 dist
-test/webpack
+webpack
 *.log

@@ -3,7 +3,7 @@ import webpack from 'webpack'
 import AssetsByTypePlugin from '../src'
 
 // eslint-disable-next-line global-require, import/no-unresolved
-const requireAssets = () => require('./webpack/assets.json')
+const requireAssets = () => require('../webpack/assets.json')
 
 test('AssetsByTypePlugin', (done) => {
   expect.assertions(3)
@@ -11,12 +11,12 @@ test('AssetsByTypePlugin', (done) => {
   const config = {
     entry: '/',
     output: {
-      path: path.join(__dirname, './webpack'),
+      path: path.join(__dirname, '../webpack'),
       publicPath: '/',
     },
     plugins: [
       new AssetsByTypePlugin({
-        path: path.join(__dirname, './webpack/assets.json'),
+        path: path.join(__dirname, '../webpack/assets.json'),
       }),
     ],
   }
