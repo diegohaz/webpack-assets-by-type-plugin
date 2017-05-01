@@ -1,6 +1,6 @@
 {
   "name": "webpack-assets-by-type-plugin",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "A webpack plugin that save assets by type (js, css)",
   "license": "MIT",
   "repository": "diegohaz/webpack-assets-by-type-plugin",
